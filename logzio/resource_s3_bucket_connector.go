@@ -50,6 +50,11 @@ func resourceS3BucketConnector() *schema.Resource {
 				Optional: true,
 				Default: true,
 			},
+			s3BucketConnectorAddS3ObjectKeyAsLogField: {
+				Type: schema.TypeBool,
+				Optional: true,
+				Default: false,
+			},
 			s3BucketConnectorRegion: {
 				Type: schema.TypeString,
 				Required: true,
